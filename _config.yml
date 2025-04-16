@@ -11,6 +11,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Collections for tags
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+
 exclude:
   - Gemfile
   - Gemfile.lock

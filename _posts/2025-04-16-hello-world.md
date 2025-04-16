@@ -3,6 +3,7 @@ layout: post
 title: "Hello World"
 date: 2025-04-16 12:00:00 -0000
 categories: [jekyll, introduction]
+tags: [jekyll, static-site, markdown, tutorial]
 ---
 
 Welcome to my new Jekyll blog! This is my first blog post. I'm excited to share content with you.
