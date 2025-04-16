@@ -177,3 +177,25 @@ main.container {
     font-size: 14px;
   }
 }
+/* Footnote tooltip styling */
+/* Style for footnote reference links */
+a.footnote {
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px dotted #888;
+  cursor: help;
+}
+.footnote-tooltip {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.footnote-tooltip p {
+  margin: 0;
+}
