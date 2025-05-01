@@ -7,6 +7,8 @@ permalink: /tags/
 <div class="tags-page">
   <h1>All Tags</h1>
   
+  <p class="tag-instructions">Click on tags to filter posts. Select multiple tags to find posts with all selected tags.</p>
+  
   <div class="tag-cloud">
     {% comment %}
     We want all tags from all posts, so we need to iterate through the posts and collect the tags
@@ -52,3 +54,57 @@ permalink: /tags/
     {% endfor %}
   </div>
 </div>
+
+<script src="{{ '/assets/js/tag-filter.js' | relative_url }}"></script>
+
+<style>
+  .tag-instructions {
+    margin-bottom: 1.5em;
+    font-style: italic;
+  }
+  
+  .tag-link {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .tag-link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tag-link.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filtered-results {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .clear-tags-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .clear-tags-btn:hover {
+    background-color: #e9ecef;
+  }
+  
+  .no-results {
+    padding: 1em;
+    font-style: italic;
+    color: #666;
+  }
+</style>
