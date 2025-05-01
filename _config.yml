@@ -3,7 +3,7 @@ title: My Jekyll Blog
 email: your-email@example.com
 description: A minimal Jekyll blog hosted on Vercel
 baseurl: "" 
-url: "" 
+url: "https://charlje.vercel.app" 
 
 # Build settings
 markdown: kramdown
