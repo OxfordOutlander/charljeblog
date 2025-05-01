@@ -4,6 +4,7 @@ title: "Using Vercel with Jekyll"
 date: 2025-04-16 16:00:00 -0000
 categories: [deployment, hosting]
 tags: [vercel, deployment, hosting, static-site]
+custom_excerpt: "Learn how to deploy your Jekyll blog to Vercel for lightning-fast global hosting. This guide walks through the deployment process, highlighting Vercel's benefits including automatic builds, preview deployments, and seamless GitHub integration."
 ---
 
 Vercel is an excellent platform for hosting static sites like Jekyll blogs. This post explains how to deploy your Jekyll site to Vercel.

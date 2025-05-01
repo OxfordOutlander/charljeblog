@@ -29,7 +29,7 @@ permalink: /tags/
     {% for tag in unique_tags %}
       {% assign tag_count = all_tags | where_exp: "item", "item == tag" | size %}
       <a href="{{ '/tags/' | append: tag | append: '.html' | relative_url }}" class="tag-link{% if forloop.first %} tag-link-first{% endif %}">
-        {{ tag }} ({{ tag_count }})
+        [[{{ tag }}]] ({{ tag_count }})
       </a>
     {% endfor %}
   </div>

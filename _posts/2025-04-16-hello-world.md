@@ -4,6 +4,7 @@ title: "Hello World"
 date: 2025-04-16 12:00:00 -0000
 categories: [jekyll, introduction]
 tags: [jekyll, static-site, markdown, tutorial]
+custom_excerpt: "Welcome to my Jekyll blog! This blog will explore static site generation, web development techniques, and my journey as a developer. Join me as I share tips, tutorials, and insights about Jekyll and the broader web ecosystem."
 ---
 
 Welcome to my new Jekyll blog! This is my first blog post.[^1] I'm excited to share content with you.

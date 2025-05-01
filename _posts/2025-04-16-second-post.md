@@ -4,6 +4,7 @@ title: "Working with Jekyll Tags"
 date: 2025-04-16 14:00:00 -0000
 categories: [jekyll, tips]
 tags: [jekyll, tags, organization, tutorial]
+custom_excerpt: "Discover how to effectively use tags in your Jekyll blog to organize content and improve user navigation. This post covers tag implementation, best practices, and how they can enhance your site's SEO and user experience."
 ---
 
 Tags are an excellent way to organize your Jekyll blog content. Unlike categories, tags are more flexible and can be applied more liberally to group related content.
