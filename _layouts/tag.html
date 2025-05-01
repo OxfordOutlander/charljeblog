@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="tag-page">
-  <h1>Posts tagged with "{{ page.tag }}"</h1>
+  <h1>Posts connected to Theme "{{ page.tag }}"</h1>
   
   <ul class="post-list">
     {% for post in site.posts %}
@@ -13,14 +13,14 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h2>
           <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <p>{{ post.excerpt }}</p>
+          <p>{% if post.custom_excerpt %}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | remove_footnotes | truncatewords: 50 }}{% endif %}</p>
         </li>
       {% endif %}
     {% endfor %}
   </ul>
 
   <div class="tag-cloud">
-    <h2>All Tags</h2>
+    <h2>All Themes</h2>
     <p>
       {% assign all_tags = "" | split: "," %}
       {% for post in site.posts %}
@@ -33,8 +33,8 @@ layout: default
       
       {% for tag in unique_tags %}
         {% assign tag_count = all_tags | where_exp: "item", "item == tag" | size %}
-        <a href="{{ '/tags/' | append: tag | append: '.html' | relative_url }}" class="tag-link{% if tag == page.tag %} active{% endif %}">
-          {{ tag }} ({{ tag_count }})
+        <a href="{{ '/themes/' | append: tag | append: '.html' | relative_url }}" class="tag-link{% if tag == page.tag %} active{% endif %}">
+          [[{{ tag }}]] ({{ tag_count }})
         </a>
       {% endfor %}
     </p>

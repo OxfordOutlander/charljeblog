@@ -1,21 +1,26 @@
 # Site settings
-title: My Jekyll Blog
+title: Charlie Davidmann
 email: your-email@example.com
-description: A minimal Jekyll blog hosted on Vercel
+description: Personal blog of Charlie Davidmann
 baseurl: "" 
 url: "https://charlje.vercel.app" 
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  parse_block_html: false
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Collections for tags
+# Collections for themes
 collections:
-  tags:
+  themes:
     output: true
-    permalink: /tags/:path/
+    permalink: /themes/:path/
 
 exclude:
   - Gemfile

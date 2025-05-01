@@ -21,8 +21,8 @@ body {
 
 header {
   background-color: #f5f5f5;
-  padding: 20px 0;
-  margin-bottom: 30px;
+  padding: 10px 0;
+  margin-bottom: 5px;
 }
 
 header h1 {
@@ -67,7 +67,7 @@ footer {
 }
 
 .post-list li {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
 }
@@ -85,31 +85,135 @@ footer {
   display: block;
   color: #666;
   font-size: 0.9em;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  margin-top: 2px;
+}
+
+.post-excerpt-box {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 3px;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-style: italic;
 }
 
 .post-content {
   margin-top: 20px;
 }
 
+/* Fix spacing issues in post content */
+.post-content p {
+  margin-bottom: 1.5em;
+}
+
+.post-content h2, 
+.post-content h3, 
+.post-content h4 {
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+.post-content ul, 
+.post-content ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.post-content li {
+  margin-bottom: 0.5em;
+}
+
+.post-content hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Post header styling */
+.post-header {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border-left: 5px solid #0066cc;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.post-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2em;
+  line-height: 1.2;
+  color: #222;
+}
+
 /* Tag styling */
 .post-tags {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   font-size: 0.9em;
 }
 
 .post-tag {
-  color: #0066cc;
+  color: #333;
   text-decoration: none;
+  background-color: #f0f5ff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 3px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.post-tag strong,
+.theme-highlight {
+  color: #187ABA;
+  font-weight: bold;
 }
 
 .post-tag:hover {
-  text-decoration: underline;
+  background-color: #e0ebff;
+  text-decoration: none;
+}
+
+.page-title {
+  margin-bottom: 10px;
+}
+
+.tags-page .tag-cloud {
+  margin: 5px 0 10px 0;
+  line-height: 2;
+}
+
+.theme-divider {
+  margin: 10px 0 5px 0;
+  border: 0;
+  border-top: 1px solid #f0f0f0;
 }
 
 .tag-cloud {
-  margin: 30px 0;
+  margin: 15px 0;
   line-height: 2;
+}
+
+.theme-section h2 {
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.theme-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-section-divider {
+  margin: 40px 0 20px 0;
+  border-top: 1px solid #eaeaea;
 }
 
 .tag-link {
@@ -123,6 +227,15 @@ footer {
   font-size: 0.9em;
 }
 
+.tag-link.selected {
+  background-color: #187ABA;
+  color: white;
+}
+
+.tag-link.selected strong {
+  color: white;
+}
+
 .tag-link:hover {
   background-color: #e1e1e1;
 }
@@ -133,11 +246,21 @@ footer {
 }
 
 .tag-section {
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.tag-list {
+  margin-top: 0;
 }
 
 .tag-list h3 {
   margin-bottom: 5px;
+}
+
+.tag-section h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 /* Scroll Effect Background */
