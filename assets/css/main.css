@@ -263,7 +263,7 @@ footer {
   margin-bottom: 8px;
 }
 
-/* Scroll Effect Background */
+/* Scroll Effect Background - DISABLED FOR NOW
 .scroll-reveal-bg {
   position: fixed;
   top: 0;
@@ -282,12 +282,12 @@ footer {
 .scroll-reveal-bg.visible {
   opacity: 0.25; /* Adjust for visibility under content */
 }
+*/
 
 /* Content needs to be visible over the background */
 main.container {
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;

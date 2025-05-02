@@ -1,3 +1,4 @@
+/* BACKGROUND GIF EFFECT DISABLED
 document.addEventListener('DOMContentLoaded', function() {
   // Create the background element if it doesn't exist
   if (!document.querySelector('.scroll-reveal-bg')) {
@@ -25,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize on page load
   handleScroll();
 });
+*/
