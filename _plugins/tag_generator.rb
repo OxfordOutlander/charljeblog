@@ -1,3 +1,4 @@
+=begin
 module Jekyll
   class TagPageGenerator < Generator
     safe true
@@ -35,6 +36,7 @@ module Jekyll
     end
   end
 end
+=end
 
 # Add a filter to remove footnotes from excerpts
 module Jekyll

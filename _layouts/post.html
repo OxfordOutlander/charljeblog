@@ -7,6 +7,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
     
+    {% comment %}
     {% if page.tags.size > 0 %}
     <div class="post-tags">
       <span>Themes: </span>
@@ -15,6 +16,7 @@ layout: default
       {% endfor %}
     </div>
     {% endif %}
+    {% endcomment %}
   </header>
 
   {% if page.custom_excerpt %}
